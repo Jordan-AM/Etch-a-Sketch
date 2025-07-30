@@ -6,9 +6,6 @@
 body{
     background-color: black;
     border: 20px solid crimson;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     min-height: 100vh;
     margin: 0px;
 }
