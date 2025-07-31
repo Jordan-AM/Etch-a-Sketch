@@ -1,12 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
     <title>Etch a Sketch</title>
-</head>
-<body>
+  </head>
+  <body>
+    <main id="web-container">
+      <div id="intro">
+        <div class="intro-header">
+          <h1>Etch a Sketch</h1>
+          <p>by The Odin Project</p>
+        </div>
+        <div class="resolution-options">
+          <h3>Choice a canvas size in pixels.</h3>
+          <div class="resolutions">
+            <button class="btnRes">8x8</button>
+            <button class="btnRes">16x16</button>
+            <button class="btnRes">32x32</button>
+            <button class="btnRes">64x64</button>
+          </div>
+        </div>
+      </div>
+      <div id="sketch"></div>
+    </main>
     <script src="app.js"></script>
-</body>
+  </body>
 </html>
