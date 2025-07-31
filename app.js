@@ -1,13 +1,19 @@
-// Objects declaration
-class Resolution {
-  constructor(width, height) {
-    this.x = width;
-    this.y = height;
-  }
+// Select elements
+const intro = document.querySelector("#intro");
+const sketch = document.querySelector("#sketch");
+const resolutionBtns = document.querySelector(".resolutions");
+
+function resolutionChoice(event) {
+  const resolutionChoice = parseInt(event.target.id);
+  return resolutionChoice;
 }
 
-// Object creation
-const lowRes = new Resolution(8, 8);
-const mediumRes = new Resolution(16, 16);
-const highRes = new Resolution(32, 32);
-const maxRes = new Resolution(64, 64);
+
+
+resolutionBtns.addEventListener("click", (event) => {
+  console.log(resolutionChoice(event));
+  intro.style.display = "none";
+  console.log(intro.style.display)
+  sketch.style.display = "flex"
+  console.log(sketch.style.display)  
+});

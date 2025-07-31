@@ -27,14 +27,33 @@ body {
     font-size: 18px;
 }
 
+.intro-header p {
+    margin-top: -20px;
+    font-size: 14px;
+}
+
+p a {
+    color: whitesmoke;
+}
+
 .resolution-options {
     text-align: center;
 }
 
 .btnRes {
-    padding: 24px;
+    padding: 8px;
+    width: 100px;
+    height: auto;
     font-size: 24px;
     font-weight: bold;
     background-color: dodgerblue;
-    border: 5px solid white;
+    border: 3px solid white;
+    border-radius: 15px;
+    cursor:pointer
+}
+
+
+
+#sketch {
+    display: none
 }
