@@ -49,6 +49,7 @@ p a {
     border: 3px solid white;
     border-radius: 10px;
     cursor: pointer;
+    box-shadow: 0 0 2px 2px white;
 }
 
 .color-picker {
@@ -69,7 +70,9 @@ p a {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 2px solid crimson;
+    border: 5px solid crimson;
+    border-radius: 5px;
+    box-shadow: 0 0 5px 5px crimson;
 }
 
 #canvas {
