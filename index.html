@@ -6,27 +6,35 @@
     <link rel="stylesheet" href="index.css" />
     <title>Etch a Sketch</title>
   </head>
+
   <body>
-    <main id="web-container">
-      <div id="intro">
-        <div class="intro-header">
-            <h1>Etch a Sketch</h1>
-            <p>by <a href="https://www.theodinproject.com/" rel="noopener noreferrer">The Odin Project</a></p>
+    <main id="mainContainer">
+      <header class="intro-header">
+        <h1 id="title-header">Etch a Sketch</h1>
+        <p id="description-p">
+          by
+          <a href="https://www.theodinproject.com/" rel="noopener noreferrer"
+            >The Odin Project</a
+          >
+        </p>
+      </header>
+      <section class="resolution-options">
+        <h2>Choose a canvas size in pixels.</h2>
+        <div class="resolutions">
+          <button data-resolution="8" class="btnRes">8x8</button>
+          <button data-resolution="16" class="btnRes">16x16</button>
+          <button data-resolution="32" class="btnRes">32x32</button>
+          <button data-resolution="64" class="btnRes">64x64</button>
+          <button id="clearBtn" class="btnRes">Clear</button>
         </div>
-        <div class="resolution-options">
-            <h3>Choice a canvas size in pixels.</h3>
-            <div class="resolutions">
-                <button id="8" class="btnRes">8x8</button>
-                <button id="16" class="btnRes">16x16</button>
-                <button id="32" class="btnRes">32x32</button>
-                <button id="64" class="btnRes">64x64</button>
-            </div>
-            <hr>
+        <div class="color-picker">
+          <label for="colorInput">Pick a color:</label>
+          <input type="color" id="colorInput" value="#000000" />
         </div>
-      </div>
-      <div id="sketch">
+      </section>
+      <section id="sketch">
         <div id="canvas"></div>
-      </div>
+      </section>
     </main>
     <script src="app.js"></script>
   </body>
