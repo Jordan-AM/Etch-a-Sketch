@@ -14,7 +14,7 @@ function createPixel(size) {
   pixel.style.border = "1px solid rgba(20, 20, 20, 0.5)";
   pixel.style.backgroundColor = "white";
 
-  pixel.addEventListener("click", () => {
+  pixel.addEventListener("mouseover", () => {
     pixel.style.backgroundColor = currentColor;
   });
 
